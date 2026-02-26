@@ -80,7 +80,5 @@ window.addEventListener("scroll", () => {
 
     if(sectionPos < screenPos) {
         showProgress();
-    } else {
-        hideProgress();
     }
 });

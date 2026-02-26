@@ -2,133 +2,92 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio | Étudiant Informatique</title>
+    <title>Portfolio - ZONGO Elvis Landry</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- ================= NAVBAR ================= -->
-    <header id="navbar">
-        <div class="navbar">
-            <h2 class="logo">ZEL</h2>
+    <!-- Background particles -->
+    <div id="particles-js"></div>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">ZONGO Elvis Landry</h2>
             <ul class="nav-links">
                 <li><a href="#home">Accueil</a></li>
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#projects">Projets</a></li>
-                <li><a href="#skills">Compétences</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
 
-    <!-- ================= HERO ================= -->
+    <!-- HERO -->
     <section id="home" class="hero">
-        <div class="hero-content glass">
-            <img src="image/photo.jpg" alt="Photo de profil" class="profile-pic">
+        <div class="hero-content">
+            <img src="image/profile.jpg" alt="Photo de profil" class="profile-pic">
+            <h1>Bonjour, je suis <span>ZONGO Elvis Landry</span></h1>
+            <p class="typing-text">
+                <span id="typed"></span>
+            </p>
 
-            <h1>Bonjour, je suis <span>Zongo</span></h1>
-
-            <h2>
-                <span id="typing-text"></span>
-            </h2>
-
-            <a href="cv.pdf" class="btn" download>Télécharger mon CV</a>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">Voir mes projets</a>
+                <a href="cv.pdf" download class="btn btn-cv">Télécharger CV</a>
+            </div>
         </div>
     </section>
 
-    <!-- ================= ABOUT ================= -->
-    <section id="about" class="about glass">
-        <h2>À propos de moi</h2>
+    <!-- A PROPOS -->
+    <section id="about">
+        <h2>À propos</h2>
         <p>
-            Étudiant en informatique passionné par le développement logiciel,
-            la cybersécurité et l’architecture des systèmes informatiques,
-            je conçois et réalise des projets techniques à forte valeur ajoutée.
-            <br><br>
-            J’ai développé plusieurs applications en C, Java et JavaFX,
-            réalisé un jeu vidéo avec Raylib et travaillé sur des projets
-            d’audit de sécurité réseau.
-            <br><br>
-            Rigoureux, autonome et orienté performance, je m’efforce de produire
-            un code propre, structuré et optimisé.
+            Étudiant en informatique 💻, je suis passionné par le développement logiciel, la cybersécurité 🛡️ et les systèmes informatiques 🖥️. Depuis le début de mon parcours académique, je me suis engagé dans la création de projets concrets qui me permettent d’allier théorie et pratique. J’ai acquis une solide expérience en programmation grâce à la réalisation de projets en C, Java, JavaFX et en développement web 🌐, allant de simples applications de gestion 📊 à des projets plus complexes comme un jeu vidéo interactif développé avec Raylib 🎮 et un audit de sécurité réseau 🔍 intégrant des outils professionnels tels que Kali Linux, Wireshark et Metasploit.
+
+Curieux et rigoureux 🔧, j’attache une grande importance à la qualité et à la structuration du code 📝, ainsi qu’à la performance et à la fiabilité des solutions que je conçois ⚡. Autonome dans mes projets 🏃‍♂️, je sais prendre des initiatives tout en restant attentif aux bonnes pratiques de développement et aux normes de sécurité informatique 🔒. Mon approche analytique et méthodique me permet d’identifier rapidement les problèmes et de proposer des solutions innovantes 💡, que ce soit pour le développement d’applications logicielles, l’optimisation de systèmes ou la sécurisation d’environnements informatiques.
+
+Motivé par l’innovation 🚀 et l’apprentissage continu 📚, je cherche constamment à approfondir mes connaissances et à explorer de nouvelles technologies 🖱️. Mon objectif est de contribuer à des projets ambitieux où je peux mettre en pratique mes compétences en programmation, en cybersécurité et en systèmes informatiques, tout en participant à la conception de solutions performantes et modernes ⚙️, adaptées aux besoins des utilisateurs et aux enjeux actuels du numérique 🌍.
         </p>
     </section>
 
-    <!-- ================= PROJECTS ================= -->
-    <section id="projects" class="projects glass">
+    <!-- PROJETS -->
+    <section id="projects">
         <h2>Mes Projets</h2>
-
         <div class="project-container">
             <div class="project-card">
-                <h3>Jeu vidéo en C</h3>
-                <p>Développé avec Raylib, gestion collisions et animations.</p>
-            </div>
-
-            <div class="project-card">
                 <h3>Application JavaFX</h3>
-                <p>Application de gestion avec interface graphique moderne.</p>
+                <p>Application de gestion avec interface moderne.</p>
             </div>
 
             <div class="project-card">
-                <h3>Audit Sécurité Réseau</h3>
-                <p>Analyse des vulnérabilités et recommandations sécuritaires.</p>
+                <h3>Jeu Astéroïde en C</h3>
+                <p>Développé avec Raylib et gestion de collisions.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Audit Réseau</h3>
+                <p>Analyse sécurité avec Kali Linux & Wireshark.</p>
             </div>
         </div>
     </section>
 
-    <!-- ================= SKILLS ================= -->
-    <section id="skills" class="glass">
-        <h2>Compétences</h2>
-
-        <div class="skills-container">
-
-            <div class="skill">
-                <span>C</span>
-                <div class="progress-bar">
-                    <div class="progress" data-width="85%"></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <span>Java / JavaFX</span>
-                <div class="progress-bar">
-                    <div class="progress" data-width="80%"></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <span>HTML / CSS / JavaScript</span>
-                <div class="progress-bar">
-                    <div class="progress" data-width="75%"></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <span>Cybersécurité / Réseau</span>
-                <div class="progress-bar">
-                    <div class="progress" data-width="70%"></div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ================= CONTACT ================= -->
-    <section id="contact" class="contact glass">
+    <!-- CONTACT -->
+    <section id="contact">
         <h2>Contact</h2>
         <p>Email : zongoelvis36@gmail.com</p>
-        <p>GitHub : github.com/zel36</p>
-        <p>Telephone : +226 72 37 53 22</p>
+        <p>Téléphone : +226 72 37 53 22</p>
     </section>
 
-    <!-- ================= FOOTER ================= -->
     <footer>
-        <p>© 2026 Zongo | Tous droits réservés</p>
+        <p>© 2026 ZONGO Elvis Landry</p>
     </footer>
 
-    <!-- ================= PARTICLES ================= -->
-    <canvas id="particles"></canvas>
-
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
     <script src="script.js"></script>
+
 </body>
 </html>
