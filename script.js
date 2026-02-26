@@ -56,3 +56,31 @@ particlesJS("particles-js", {
         move: { enable: true, speed: 2 }
     }
 });
+// ================= SKILLS ANIMATION =================
+
+const skillsSection = document.querySelector("#skills");
+const progressBars = document.querySelectorAll(".progress");
+
+function showProgress() {
+    progressBars.forEach(bar => {
+        const value = bar.getAttribute("data-width");
+        bar.style.width = value;
+    });
+}
+
+function hideProgress() {
+    progressBars.forEach(bar => {
+        bar.style.width = "0";
+    });
+}
+
+window.addEventListener("scroll", () => {
+    const sectionPos = skillsSection.getBoundingClientRect().top;
+    const screenPos = window.innerHeight / 1.3;
+
+    if(sectionPos < screenPos) {
+        showProgress();
+    } else {
+        hideProgress();
+    }
+});

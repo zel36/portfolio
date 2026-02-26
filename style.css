@@ -131,3 +131,40 @@ section {
 @keyframes blink {
     50% { opacity: 0; }
 }
+/* ================= SKILLS SECTION ================= */
+
+#skills {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.skills-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.skill {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.skill span {
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    background: #38bdf8;
+    border-radius: 20px;
+    transition: width 1.5s ease-in-out;
+}
